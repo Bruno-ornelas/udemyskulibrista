@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SkullLibristra" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="street" translatesAutoresizingMaskIntoConstraints="NO" id="Yg8-gI-Qn7">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="player0" translatesAutoresizingMaskIntoConstraints="NO" id="ToI-J5-0MS">
+                                <rect key="frame" x="117.5" y="193.5" width="140" height="280"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="rPB-xV-CbE"/>
+                                    <constraint firstAttribute="width" secondItem="ToI-J5-0MS" secondAttribute="height" multiplier="1:2" id="sgy-L0-MW2"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sun" translatesAutoresizingMaskIntoConstraints="NO" id="Ros-Ve-xov">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="83"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Ros-Ve-xov" secondAttribute="height" multiplier="1029:228" id="PJ6-Ad-pxG"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Equilibre a caveira! sem cair!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eaU-3q-gqe">
+                                <rect key="frame" x="36" y="103" width="303" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="g3V-3A-3j5">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gameOver" translatesAutoresizingMaskIntoConstraints="NO" id="a6V-pU-gRT">
+                                        <rect key="frame" x="87.5" y="28" width="200" height="148.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="LPf-od-zGR"/>
+                                            <constraint firstAttribute="width" secondItem="a6V-pU-gRT" secondAttribute="height" multiplier="452:336" id="gO3-WU-Ef9"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ygd-gb-ybz">
+                                        <rect key="frame" x="42.5" y="469" width="290" height="29"/>
+                                        <state key="normal" image="playAgain"/>
+                                        <connections>
+                                            <action selector="PlayAgain:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RDe-Nr-7sv"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Você aguentou por X segundos!!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TFG-uD-3pD">
+                                        <rect key="frame" x="58.5" y="408.5" width="258.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="0.81818735600000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="ygd-gb-ybz" firstAttribute="centerY" secondItem="g3V-3A-3j5" secondAttribute="centerY" constant="150" id="5Gw-9P-ybR"/>
+                                    <constraint firstItem="TFG-uD-3pD" firstAttribute="centerX" secondItem="g3V-3A-3j5" secondAttribute="centerX" id="JJe-GP-8eV"/>
+                                    <constraint firstItem="a6V-pU-gRT" firstAttribute="centerX" secondItem="g3V-3A-3j5" secondAttribute="centerX" id="S9K-Cv-JAz"/>
+                                    <constraint firstItem="ygd-gb-ybz" firstAttribute="top" secondItem="TFG-uD-3pD" secondAttribute="bottom" constant="40" id="Ypu-e4-Doy"/>
+                                    <constraint firstItem="ygd-gb-ybz" firstAttribute="centerX" secondItem="g3V-3A-3j5" secondAttribute="centerX" id="dwK-xj-8eS"/>
+                                    <constraint firstItem="a6V-pU-gRT" firstAttribute="top" secondItem="g3V-3A-3j5" secondAttribute="top" constant="28" id="rU8-4X-GgD"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.90588235294117647" green="0.95686274509803915" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ros-Ve-xov" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0fQ-zY-tUX"/>
+                            <constraint firstItem="Ros-Ve-xov" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="3F4-Dy-nPu"/>
+                            <constraint firstItem="Yg8-gI-Qn7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="D4O-fN-WOR"/>
+                            <constraint firstItem="ToI-J5-0MS" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="EKk-bM-QhI"/>
+                            <constraint firstItem="Yg8-gI-Qn7" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="G6K-an-3SD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ros-Ve-xov" secondAttribute="trailing" id="I4j-WK-jdi"/>
+                            <constraint firstItem="Yg8-gI-Qn7" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="IVV-ai-zng"/>
+                            <constraint firstItem="g3V-3A-3j5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="J2p-Wt-Rot"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eaU-3q-gqe" secondAttribute="trailing" constant="36" id="KcN-ir-0xo"/>
+                            <constraint firstItem="eaU-3q-gqe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="36" id="VsT-Dm-Y04"/>
+                            <constraint firstAttribute="trailing" secondItem="Yg8-gI-Qn7" secondAttribute="trailing" id="WN6-m5-f6J"/>
+                            <constraint firstItem="g3V-3A-3j5" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Wcj-D4-72S"/>
+                            <constraint firstItem="Yg8-gI-Qn7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="YRa-ej-Ehh"/>
+                            <constraint firstItem="g3V-3A-3j5" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="f1b-4D-k8D"/>
+                            <constraint firstItem="ToI-J5-0MS" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="kOb-Vx-9Nw"/>
+                            <constraint firstItem="eaU-3q-gqe" firstAttribute="top" secondItem="Ros-Ve-xov" secondAttribute="bottom" constant="20" id="mVi-y2-1Ir"/>
+                            <constraint firstAttribute="bottom" secondItem="Yg8-gI-Qn7" secondAttribute="bottom" id="qz9-c2-nzd"/>
+                            <constraint firstItem="g3V-3A-3j5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="u07-lH-U2I"/>
+                            <constraint firstItem="ToI-J5-0MS" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="wcd-qx-j1v"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lbInstructions" destination="eaU-3q-gqe" id="d8c-Oa-R5b"/>
+                        <outlet property="lbTimePlayed" destination="TFG-uD-3pD" id="Tgw-u3-Pbw"/>
+                        <outlet property="player" destination="ToI-J5-0MS" id="B1h-UM-3c9"/>
+                        <outlet property="stret" destination="Yg8-gI-Qn7" id="v6O-J5-k1n"/>
+                        <outlet property="viGameOver" destination="g3V-3A-3j5" id="wlO-vN-eT4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="97.601199400299862"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gameOver" width="226" height="168"/>
+        <image name="playAgain" width="290" height="29"/>
+        <image name="player0" width="588" height="1176"/>
+        <image name="street" width="1400" height="2800"/>
+        <image name="sun" width="1029" height="228"/>
+    </resources>
+</document>
